@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="QueryProcessor">
+      <UniqueIdentifier>{a3d78fb9-cf4b-4e6c-8589-184c9a814da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{b22be24e-3629-4c97-b48a-ceb1d825e4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTest">
+      <UniqueIdentifier>{d5f229ca-dab1-4dcf-b7f6-12020bf13352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTest\Framework">
+      <UniqueIdentifier>{42904abd-0421-4fad-bb88-60e5eed2655b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\BasicType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Convert.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\QueryProcessor\Parser.h">
+      <Filter>QueryProcessor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\QueryProcessor\Tokenizer.h">
+      <Filter>QueryProcessor</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitTest\Framework\UnitTest.h">
+      <Filter>UnitTest\Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\QueryProcessor\Parser.cpp">
+      <Filter>QueryProcessor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\QueryProcessor\Tokenizer.cpp">
+      <Filter>QueryProcessor</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\main.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\ParseTest.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\Framework\UnitTest.cpp">
+      <Filter>UnitTest\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\Framework\UnitTestTests.cpp">
+      <Filter>UnitTest\Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
