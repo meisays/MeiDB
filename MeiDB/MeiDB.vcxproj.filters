@@ -13,6 +13,12 @@
     <Filter Include="UnitTest\Framework">
       <UniqueIdentifier>{42904abd-0421-4fad-bb88-60e5eed2655b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="StorageEngine">
+      <UniqueIdentifier>{22918105-4a8a-46d5-880a-98d61b4b929e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{cbf17724-2926-4397-9914-2de113522276}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\BasicType.h">
@@ -29,6 +35,29 @@
     </ClInclude>
     <ClInclude Include="UnitTest\Framework\UnitTest.h">
       <Filter>UnitTest\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\QueryProcessor\Analyzer.h">
+      <Filter>QueryProcessor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\QueryProcessor\ExecutionPlan.h">
+      <Filter>QueryProcessor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\QueryProcessor\LogicalPlan.h">
+      <Filter>QueryProcessor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Catalog.h" />
+    <ClInclude Include="Engine\Schema.h" />
+    <ClInclude Include="Engine\Client\Client.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\StorageEngine\Heap.h">
+      <Filter>StorageEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\StorageEngine\Page.h">
+      <Filter>StorageEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitTest\TestUtility.h">
+      <Filter>UnitTest</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +78,19 @@
     </ClCompile>
     <ClCompile Include="UnitTest\Framework\UnitTestTests.cpp">
       <Filter>UnitTest\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Catalog.cpp" />
+    <ClCompile Include="UnitTest\ClientTest.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\StorageEngine\Heap.cpp">
+      <Filter>StorageEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\PageTest.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\StorageEngine\Page.cpp">
+      <Filter>StorageEngine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

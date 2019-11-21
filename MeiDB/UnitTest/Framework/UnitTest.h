@@ -16,10 +16,23 @@ namespace MeiDB
 		void case5();
 		void case6();
 		void case7();
-		void case8();
-		void case9();
-		void case10();
-		void case11();
+
+		void test_all_case();
+	}
+
+	namespace ClientTest {
+		void case1();
+		void case2();
+
+		void test_all_case();
+	}
+
+	namespace PageTest {
+		void case1();
+		void case2();
+		void case3();
+		void case4();
+
 		void test_all_case();
 	}
 

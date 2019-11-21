@@ -86,10 +86,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -114,27 +115,42 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Common\BasicType.h" />
     <ClInclude Include="Common\Convert.h" />
+    <ClInclude Include="Engine\Client\Client.h" />
+    <ClInclude Include="Engine\QueryProcessor\Analyzer.h" />
+    <ClInclude Include="Engine\QueryProcessor\ExecutionPlan.h" />
+    <ClInclude Include="Engine\QueryProcessor\LogicalPlan.h" />
     <ClInclude Include="Engine\QueryProcessor\Parser.h" />
     <ClInclude Include="Engine\QueryProcessor\Tokenizer.h" />
+    <ClInclude Include="Engine\Schema.h" />
+    <ClInclude Include="Engine\StorageEngine\Heap.h" />
+    <ClInclude Include="Engine\StorageEngine\Page.h" />
+    <ClInclude Include="Engine\Catalog.h" />
     <ClInclude Include="UnitTest\Framework\UnitTest.h" />
+    <ClInclude Include="UnitTest\TestUtility.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Engine\Catalog.cpp" />
     <ClCompile Include="Engine\QueryProcessor\Parser.cpp" />
     <ClCompile Include="Engine\QueryProcessor\Tokenizer.cpp" />
+    <ClCompile Include="Engine\StorageEngine\Heap.cpp" />
+    <ClCompile Include="Engine\StorageEngine\Page.cpp" />
+    <ClCompile Include="UnitTest\ClientTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTestTests.cpp" />
     <ClCompile Include="UnitTest\main.cpp" />
+    <ClCompile Include="UnitTest\PageTest.cpp" />
     <ClCompile Include="UnitTest\ParseTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

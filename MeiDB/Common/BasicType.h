@@ -1,5 +1,6 @@
 //
 //define primitive types
+//对于数据库使用的基础数据类型进行封装，使用typedef 等手段
 //
 
 #pragma once
@@ -33,9 +34,9 @@ namespace MeiDB {
 	struct IEnumerator {
 		typedef shared_ptr<IEnumerator<T>> Ptr;
 
-		virtual bool move_next();
-		virtual const T current();
-		virtual ~IEnumerator();
+		virtual bool move_next() = 0;
+		virtual const T current() = 0;
+		virtual ~IEnumerator() {};
 	};
 
 	template<typename T>
