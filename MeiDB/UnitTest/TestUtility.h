@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Framework\UnitTest.h"
 
 #include "..\Engine\Client\Client.h"

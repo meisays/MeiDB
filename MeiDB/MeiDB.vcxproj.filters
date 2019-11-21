@@ -59,6 +59,9 @@
     <ClInclude Include="UnitTest\TestUtility.h">
       <Filter>UnitTest</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\StorageEngine\PageFile.h">
+      <Filter>StorageEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\QueryProcessor\Parser.cpp">
@@ -91,6 +94,12 @@
     </ClCompile>
     <ClCompile Include="Engine\StorageEngine\Page.cpp">
       <Filter>StorageEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\StorageEngine\PageFile.cpp">
+      <Filter>StorageEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\PageFileTest.cpp">
+      <Filter>UnitTest</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

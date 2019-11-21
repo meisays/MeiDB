@@ -10,7 +10,9 @@ int main() {
 	
 	//MeiDB::ParserTest::test_all_case();
 	//MeiDB::ClientTest::test_all_case();
-	MeiDB::PageTest::test_all_case();
+	//MeiDB::PageTest::test_all_case();
+	//MeiDB::PageFileTest::test_all_case();
+	MeiDB::PageFileTest::test_all_case();
 
 	return 0;
 }

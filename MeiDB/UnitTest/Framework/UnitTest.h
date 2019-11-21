@@ -36,6 +36,11 @@ namespace MeiDB
 		void test_all_case();
 	}
 
+	namespace PageFileTest {
+		void ttt();
+		void test_all_case();
+	}
+
 	class AssertFailedException : public Exception
 	{
 	public:

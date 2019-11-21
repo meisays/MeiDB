@@ -87,6 +87,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +117,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,6 +138,7 @@
     <ClInclude Include="Engine\Schema.h" />
     <ClInclude Include="Engine\StorageEngine\Heap.h" />
     <ClInclude Include="Engine\StorageEngine\Page.h" />
+    <ClInclude Include="Engine\StorageEngine\PageFile.h" />
     <ClInclude Include="Engine\Catalog.h" />
     <ClInclude Include="UnitTest\Framework\UnitTest.h" />
     <ClInclude Include="UnitTest\TestUtility.h" />
@@ -146,10 +149,12 @@
     <ClCompile Include="Engine\QueryProcessor\Tokenizer.cpp" />
     <ClCompile Include="Engine\StorageEngine\Heap.cpp" />
     <ClCompile Include="Engine\StorageEngine\Page.cpp" />
+    <ClCompile Include="Engine\StorageEngine\PageFile.cpp" />
     <ClCompile Include="UnitTest\ClientTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTestTests.cpp" />
     <ClCompile Include="UnitTest\main.cpp" />
+    <ClCompile Include="UnitTest\PageFileTest.cpp" />
     <ClCompile Include="UnitTest\PageTest.cpp" />
     <ClCompile Include="UnitTest\ParseTest.cpp" />
   </ItemGroup>
