@@ -3,12 +3,13 @@
 /**
 ***
 **/
+#include "..\..\Common\BasicType.h"
 
 #include <vector>
 #include <memory>
 using namespace std;
 
-#include "..\..\Common\BasicType.h"
+
 
 namespace MeiDB {
 	struct DbValue {

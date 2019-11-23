@@ -12,7 +12,8 @@ int main() {
 	//MeiDB::ClientTest::test_all_case();
 	//MeiDB::PageTest::test_all_case();
 	//MeiDB::PageFileTest::test_all_case();
-	MeiDB::PageFileTest::test_all_case();
+	//MeiDB::PageFileTest::test_all_case();
+	MeiDB::DataRowTest::test_all_case();
 
 	return 0;
 }

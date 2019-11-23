@@ -13,6 +13,7 @@ namespace MeiDB {
 		String
 	};
 
+	//接口  类型
 	struct IColumnDef {
 		typedef shared_ptr<IColumnDef> Ptr;
 
@@ -38,6 +39,7 @@ namespace MeiDB {
 		SqlType _type;
 	};
 
+	//
 	struct ITupleDesc {
 		typedef shared_ptr<ITupleDesc> Ptr;
 
@@ -53,9 +55,13 @@ namespace MeiDB {
 		typedef shared_ptr<TupleDesc> Ptr;
 		void add_column(const ColumnDef& column) {
 			ColumnDef::Ptr column_ptr = make_shared<ColumnDef>(column);
-			_column_list.push_back(column_ptr);
-			_column_map[column._name] = _column_list.size() - 1;
+			_column_list.push_back(column_ptr);  //column 名字重复怎么处理
+			_column_map[column._name] = _column_list.size() - 1; // index begin from 0
 			//_column_map.insert(column_ptr->column_name, _column_list.size() - 1>);
+		}
+
+		void add_column(const String& name, SqlType type) {
+			this->add_column(ColumnDef(name, type));
 		}
 
 		virtual int get_ordinal(const String& column_name) override {

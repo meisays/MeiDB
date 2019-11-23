@@ -292,6 +292,13 @@ namespace MeiDB {
 			return make_shared<Enumerator>(this);
 		}
 
+		RowPtr insert_data_row(vector<DbValue::Ptr> fields) {
+			auto field_length = DataRow::CalculateRowSize(fields);
+			RowPtr row_ptr = this->get_row_ptr(this->insert_empty_row(field_length));
+			DataRow::CopyDataRow(row_ptr.data, fields);
+			return row_ptr;
+		}
+
 	};
 
 	typedef DataPageImpl<DataPageData> DataPage;
