@@ -120,6 +120,10 @@ namespace MeiDB {
 			return this->page_id;
 		}
 
+		void set_page_id(PageId page_id) {
+			this->page_id = page_id;
+		}
+
 		bool operator==(const PageImpl& page) const {
 			const PageImpl* page_ptr = &page;
 			//return this->page_id == page.get_page_id();
@@ -242,7 +246,7 @@ namespace MeiDB {
 			delete_row(row_id.slot_id);
 		}
 
-		void set_next_page(PageId page) { this->next_page = page; }
+		void set_next_page_id(PageId page) { this->next_page = page; }
 
 		PageId get_next_page_id() { return this->next_page; }
 

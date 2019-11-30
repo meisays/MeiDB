@@ -13,7 +13,11 @@ int main() {
 	//MeiDB::PageTest::test_all_case();
 	//MeiDB::PageFileTest::test_all_case();
 	//MeiDB::PageFileTest::test_all_case();
-	MeiDB::DataRowTest::test_all_case();
+	//MeiDB::DataRowTest::test_all_case();
+	//MeiDB::HeapTest::test_all_case();
+	//MeiDB::BufferManagerTest::test_all_case();
+	MeiDB::HeapTest::test_all_case();
+	
 
 	return 0;
 }

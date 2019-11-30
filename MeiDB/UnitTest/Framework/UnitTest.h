@@ -44,6 +44,17 @@ namespace MeiDB
 		void test_all_case();
 	}
 
+	namespace HeapTest {
+		void test_all_case();
+	}
+
+	namespace BufferManagerTest {
+		void test_all_case();
+	}
+
+	namespace HeapTest {
+		void test_all_case();
+	}
 
 	class AssertFailedException : public Exception
 	{

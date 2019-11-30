@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MeiDB::Parser" Collapsed="true">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::Tokenizer" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Tokenizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::Exception" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAACA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::OutOfRangeException" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::InvalidOperationException" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::AssertFailedException" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>UnitTest\Framework\UnitTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::Assert" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAgBAAQAAIhAAAAAAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>UnitTest\Framework\UnitTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::DataRow" Collapsed="true">
+    <Position X="8.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAgAIAAAAAAAAAAAAQBAAAAQAQAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\DataRow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::SimpleHeapHeaderPageData" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Heap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::SimpleHeap" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Heap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::PageData" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAIAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::DataPageData" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAAABAQAAAAAAAAAAACAAAAEAFQAIACAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::PageImpl&lt;TData&gt;" Collapsed="true">
+    <Position X="16" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAIAAAAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::DataPageImpl&lt;TData&gt;" Collapsed="true">
+    <Position X="16" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAEAAAQAAgAQAAAAAAAAAgIABAIgIABAAASA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::PageFile" Collapsed="true">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAKAAAAAEgAACAAIBDIhEAAAAAIA=</HashCode>
+      <FileName>Engine\StorageEngine\PageFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeiDB::BufferManager" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAAIAAgCAAAAAAQAAACAABAAABAAIAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\BufferManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MeiDB::LogicalScan" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\LogicalPlan.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::LogicalSelectItem" Collapsed="true">
+    <Position X="23.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\LogicalPlan.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::LogicalPlan" Collapsed="true">
+    <Position X="20.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABBAABAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\LogicalPlan.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IntegerConstant" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::FromClause" Collapsed="true">
+    <Position X="22" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::TargetElement" Collapsed="true">
+    <Position X="25.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::TargetList" Collapsed="true">
+    <Position X="27.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::Expression" Collapsed="true">
+    <Position X="20.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::WhereClause" Collapsed="true">
+    <Position X="25.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::SelectStmt" Collapsed="true">
+    <Position X="20.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::SqlToken" Collapsed="true">
+    <Position X="23.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAQAAAAAAAiAAAAAAAAAAAgA=</HashCode>
+      <FileName>Engine\QueryProcessor\Tokenizer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::TokenizerException" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\QueryProcessor\Tokenizer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IEnumerator&lt;T&gt;" Collapsed="true">
+    <Position X="23.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAMAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IEnumerator&lt;T*&gt;" Collapsed="true">
+    <Position X="25.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAMAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IEnumerator&lt;shared_ptr&lt;T&gt;&gt;" Collapsed="true">
+    <Position X="27.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAMAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::Convert&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ToStringTrait&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ToStringTrait&lt;String&gt;" Collapsed="true">
+    <Position X="20.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::Convert&lt;String&gt;" Collapsed="true">
+    <Position X="23.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ToStringTrait&lt;Int32&gt;" Collapsed="true">
+    <Position X="22" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::Convert&lt;Int32&gt;" Collapsed="true">
+    <Position X="22" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ToStringTrait&lt;UInt32&gt;" Collapsed="true">
+    <Position X="23.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::Convert&lt;UInt32&gt;" Collapsed="true">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Convert.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::EqualAssertion&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitTest\Framework\UnitTest.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::EqualAssertion&lt;T*&gt;" Collapsed="true">
+    <Position X="27.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitTest\Framework\UnitTest.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::EqualAssertion&lt;shared_ptr&lt;T&gt;&gt;" Collapsed="true">
+    <Position X="25.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnitTest\Framework\UnitTest.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::RowId" Collapsed="true">
+    <Position X="27.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::SlotInfo" Collapsed="true">
+    <Position X="22" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAACAAAAEAAAQAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::RowPtr" Collapsed="true">
+    <Position X="18.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAAQAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::DbValue" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIACAAAAACAAAAAAAAAQABAAAAA=</HashCode>
+      <FileName>Engine\Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::DbInt" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAQCAAAAAQAAAAAAA=</HashCode>
+      <FileName>Engine\Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::DbFloat" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAoAAAAAAAAAAACAAAAAQAAAAAAA=</HashCode>
+      <FileName>Engine\Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::DbString" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIgAAAAAAAAAACAAAAAQAAAAAAA=</HashCode>
+      <FileName>Engine\Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IDataRow" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAA=</HashCode>
+      <FileName>Engine\Client\Client.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::IColumnDef" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Schema.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ColumnDef" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Engine\Schema.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::ITupleDesc" Collapsed="true">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Schema.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::TupleDesc" Collapsed="true">
+    <Position X="2.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAABACBAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Engine\Schema.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeiDB::PageFrame" Collapsed="true">
+    <Position X="25.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\BufferManager.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="MeiDB::Byte" Collapsed="true">
+    <Position X="20.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Int16" Collapsed="true">
+    <Position X="23.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Int32" Collapsed="true">
+    <Position X="3.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Int64" Collapsed="true">
+    <Position X="25.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::UInt16" Collapsed="true">
+    <Position X="20.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::UInt32" Collapsed="true">
+    <Position X="22" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::UInt64" Collapsed="true">
+    <Position X="23.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Bool" Collapsed="true">
+    <Position X="18.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Char" Collapsed="true">
+    <Position X="22" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::String" Collapsed="true">
+    <Position X="18.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::PString" Collapsed="true">
+    <Position X="27.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BasicType.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::PageId" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::SlotId" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::Page" Collapsed="true">
+    <Position X="16" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MeiDB::DataPage" Collapsed="true">
+    <Position X="16" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\StorageEngine\Page.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="MeiDB::SqlTokenType" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAAAAAAAAAAAAAgAAAAAAAAAEAAkAAgAAAQAQAAHE=</HashCode>
+      <FileName>Engine\QueryProcessor\Tokenizer.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MeiDB::SqlType" Collapsed="true">
+    <Position X="20.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgACA=</HashCode>
+      <FileName>Engine\Schema.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

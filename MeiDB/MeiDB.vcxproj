@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -136,6 +136,7 @@
     <ClInclude Include="Engine\QueryProcessor\Parser.h" />
     <ClInclude Include="Engine\QueryProcessor\Tokenizer.h" />
     <ClInclude Include="Engine\Schema.h" />
+    <ClInclude Include="Engine\StorageEngine\BufferManager.h" />
     <ClInclude Include="Engine\StorageEngine\DataRow.h" />
     <ClInclude Include="Engine\StorageEngine\Heap.h" />
     <ClInclude Include="Engine\StorageEngine\Page.h" />
@@ -148,13 +149,14 @@
     <ClCompile Include="Engine\Catalog.cpp" />
     <ClCompile Include="Engine\QueryProcessor\Parser.cpp" />
     <ClCompile Include="Engine\QueryProcessor\Tokenizer.cpp" />
-    <ClCompile Include="Engine\StorageEngine\Heap.cpp" />
     <ClCompile Include="Engine\StorageEngine\Page.cpp" />
     <ClCompile Include="Engine\StorageEngine\PageFile.cpp" />
+    <ClCompile Include="UnitTest\BufferManagerTest.cpp" />
     <ClCompile Include="UnitTest\ClientTest.cpp" />
     <ClCompile Include="UnitTest\DataRowTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTest.cpp" />
     <ClCompile Include="UnitTest\Framework\UnitTestTests.cpp" />
+    <ClCompile Include="UnitTest\HeapTest.cpp" />
     <ClCompile Include="UnitTest\main.cpp" />
     <ClCompile Include="UnitTest\PageFileTest.cpp" />
     <ClCompile Include="UnitTest\PageTest.cpp" />

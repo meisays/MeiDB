@@ -66,6 +66,7 @@ namespace MeiDB {
 		template<typename TPage>
 		TPage* read_page_as(PageId page_id) {
 			UInt32 page_size = sizeof(TPage);
+			//TODO ¿ÌΩ‚unique_ptr
 			unique_ptr<Byte[]> buffer(new Byte[page_size]);
 
 			fseek(file, page_id* page_size, SEEK_SET);
@@ -76,8 +77,8 @@ namespace MeiDB {
 
 		void read_page_to(Page* page, PageId page_id) {
 			UInt32 page_size = sizeof(Page);
-			fseek(file, page_id * page_size, SEEK_SET);
 
+			fseek(file, page_id * page_size, SEEK_SET);
 			fread(page, sizeof(Byte), page_size, file);
 		}
 

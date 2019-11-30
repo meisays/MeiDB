@@ -19,7 +19,7 @@ namespace MeiDB {
 	public:
 		static const Int16 NullOffset = -1;
 
-		static Int32 CalculateRowSize(std::vector<DbValue::Ptr>& fields) {
+		static Int32 CalculateRowSize(const std::vector<DbValue::Ptr>& fields) {
 			int total_size = 2;
 			for_each(fields.begin(), fields.end(), [&](DbValue::Ptr v) {total_size += (v->size() + 2); });
 

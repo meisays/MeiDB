@@ -65,6 +65,9 @@
     <ClInclude Include="Engine\StorageEngine\DataRow.h">
       <Filter>StorageEngine</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\StorageEngine\BufferManager.h">
+      <Filter>StorageEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\QueryProcessor\Parser.cpp">
@@ -89,9 +92,6 @@
     <ClCompile Include="UnitTest\ClientTest.cpp">
       <Filter>UnitTest</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\StorageEngine\Heap.cpp">
-      <Filter>StorageEngine</Filter>
-    </ClCompile>
     <ClCompile Include="UnitTest\PageTest.cpp">
       <Filter>UnitTest</Filter>
     </ClCompile>
@@ -105,6 +105,12 @@
       <Filter>UnitTest</Filter>
     </ClCompile>
     <ClCompile Include="UnitTest\DataRowTest.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\HeapTest.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest\BufferManagerTest.cpp">
       <Filter>UnitTest</Filter>
     </ClCompile>
   </ItemGroup>
